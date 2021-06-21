@@ -1,0 +1,41 @@
+.footer-banner {
+  background: var(--footer-banner-background-color);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 100%;
+}
+.footer-banner__image {
+  z-index: 2;
+    margin:0;
+    padding:0;
+  width: 490px;
+  max-width: 100%;
+  flex-basis: 40%;
+  align-self: stretch;
+}
+.footer-banner-description {
+  display: block;
+  width: 100%;
+  flex-basis: 60%;
+  padding: 90px 0px 90px 90px;
+}
+.footer-banner-title {
+    position: relative;
+  max-width: 600px;
+  font-family: Formular;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0.02em;
+  color: var(--color-green);
+}
+.footer-banner-title::before {
+    position: absolute;
+    margin-left: -50px;
+    margin-top: -20px;
+  content: url(../../images/footer-title-border.svg);
+}

@@ -1,0 +1,121 @@
+.sertificate {
+  position: relative;
+  background: linear-gradient(
+    0deg,
+    #eaf1fb 1.49%,
+    #f3f7fd 49.48%,
+    #ffffff 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.center-sertificate {
+  z-index: 1;
+  margin-top: 150px;
+  padding: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 1100px;
+  max-width: 95%;
+  
+  background: var(--color-white);
+
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  box-shadow: 0 0 20px var(--shadow-color);
+}
+
+.sertificate-image {
+  width: 500px;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  align-self: flex-start;
+}
+.sertificate-title {
+  margin-top: 0;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 29px;
+  letter-spacing: 0.02em;
+  padding: 25px 0;
+  background: linear-gradient(90deg, #263357 0%, #3a5381 100%);
+  color: #fefefe;
+  align-self: stretch;
+}
+.sertificate-description {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  padding: 0 25px;
+  color: #121e44;
+  align-self: stretch;
+  flex-grow: 1;
+  margin-top: 0;
+}
+.sertificate-center-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  flex-grow: 1;
+}
+.sertificate-slider {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sertificate-slider > img {
+  z-index: 1;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.sertificate-slider-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.sertificate-slider-title {
+  display: block;
+  margin-left: -20px;
+  padding-right: 20px;
+  font-family: Formular;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #28b292;
+}
+.sertificate-slider-description {
+  margin-right: -40px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  color: #121e44;
+}

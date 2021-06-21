@@ -1,0 +1,86 @@
+.advantages-background {
+  background: linear-gradient( 
+    0deg
+    , #d3e0f3 1.49%, #ffffff 40.57%, #e8f0fc 100% );
+    
+}
+.advantages {
+  position: relative;
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100%;
+}
+.advantages-block-1{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 60%;
+  align-self: stretch;
+}
+.grid_2column{
+  padding-top: 100px;
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.advantages-block-2{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-end;
+  flex-basis: 50%;
+}
+.advantages-block2-img{
+  padding: 121px 0;
+  width: 670px;
+  max-width: 100%;
+}
+.advantages-inner-blocks-left{
+  position: relative;
+  width: 80%;
+  max-width: 100%;
+  margin: 16px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+}
+.advantages-inner-blocks-right{
+  position: relative;
+  width: 80%;
+  max-width: 100%;
+  margin: 16px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.advantages-text{
+  position: relative;
+  margin-left: -20px;
+  display: block;
+  max-width: 150px;
+  align-items: center;
+  font-family: Formular;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--services-tabs-active-links);
+}
+.advantages-numbers{
+ 
+  min-height: 70px;
+  padding: 31px 40px;
+  background: var(--color-white);
+  box-shadow: 0 0 3px #f5f3f3;
+}
+
