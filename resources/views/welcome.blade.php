@@ -3,7 +3,7 @@
 @section('description', 'Вёрстка сайтов (front-end), Создание динамических сайтов (PHP, back-end).  Разработка уникального дизайна UI&UX. Разработка дополнительных
     модулей для веб-сайтов. Установка систем управления      (MODX, Opencart, Wordpress,Bitrix,Shopify)')
 @section('og')
-<meta property="og:url" content="https://1c-web.by" />
+<meta property="og:url" content="https://1c-web.by/front_end" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Разработка веб-сайтов. Frontend && Backend. UI&&UX дизайн . ООО ПО Системс групп " />
 <meta property="og:description" content="Вёрстка сайтов (front-end), Создание динамических сайтов (PHP, back-end).  Разработка уникального дизайна UI&UX. Разработка дополнительных
@@ -143,13 +143,12 @@
             <h3 class="services__description-title">Вёрстка сайтов
                 (front-end). <br>Создание HTML страниц</h3>
             <img class="services__description-image" src="{{asset('/images/services-1.jpg')}}" alt="image">
-            <p class="services__description-text">Вёрстка сайтов . Создание HTML страниц из исходных шаблонов
-                Photoshope, Figma, Adobe.
-                Профессиональный подход (pixel perfect). Использование современных технологий вёрстки
-                (GRID,FLEX). Адаптивность и кроссбраузерность.
-                Созданная нами страница будет корректно отображаться на любых устройствах и браузерах.
+            <p class="services__description-text">Создание сайтов с использованием современных технологий, в том числе GRID и FLEX.
+                Профессиональный подход и железные сроки по системе Pixel perfect («пиксель в пиксель»).
+                Адаптивность, кроссбраузерность и интеграция CMS: Modx, Bitrix, Wordpress и т.д. Разработка
+                различных типов сайтов: от лендинга до интернет-магазина с тысячами товаров.
             </p>
-            <button class="services__description-button">Узнать больше</button>
+            <a href="{{route('front_end')}}"><button class="services__description-button">Узнать больше</button></a>
         </div>
 
         <div class="services__description center-column none" id="td2">
