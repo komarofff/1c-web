@@ -6,7 +6,7 @@
 Modx, Bitrix, Wordpress и т.д. Разработка различных типов сайтов: от лендинга до интернет-магазина с тысячами товаров.
 ')
 @section('og')
-    <meta property="og:url" content="https://1c-web.by/front_end"/>
+    <meta property="og:url" content="https://1c-web.by/back_end"/>
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="Вёрстка сайтов (front-end).  ООО ПО Системс групп "/>
     <meta property="og:description" content="Создание сайтов с использованием современных технологий, в том числе GRID и FLEX. Профессиональный
