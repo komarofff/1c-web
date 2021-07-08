@@ -26,11 +26,73 @@ Modx, Bitrix, Wordpress и т.д. Разработка различных тип
     <script src="{{asset ('/scripts/slider.js')}}"></script>
     <script src="{{asset ('/scripts/tabs.js')}}"></script>
     <script src="{{asset ('/scripts/buttons.js')}}"></script>
+    <script>
+
+        // top slider start
+        setTimeout(firstClone, 10);
+        const speed = 6; // slider speed in seconds
+        const timeout = speed * 1000;
+        elem = document.querySelectorAll('.services-technologies-slider > .services-flex');
+        width_of_element = elem[0].offsetWidth;
+        transition_width = width_of_element * 2;
+        end1 = elem.length - 1;
+        end = elem.length;
+
+        function firstClone() {
+            document.getElementById("technologies-slider").style.transition = " 0s";
+            document.getElementById("technologies-slider").style.transform = `translateX(-${width_of_element}px)`;
+            start_clone1 = elem[end1].cloneNode(true);
+            elem[0].before(start_clone1);
+            start_clone1 = elem[0].cloneNode(true);
+            elem[end1].after(start_clone1);
+            sliderTechnology();
+        }
+
+        function sliderTechnology() {
+            document.getElementById("technologies-slider").style.transition = ` ${speed}s linear`;
+            document.getElementById("technologies-slider").style.transform = `translateX(-${transition_width}px)`;
+            setTimeout(secondClone, timeout);
+
+        }
+
+        function secondClone() {
+            elem = document.querySelectorAll('.services-technologies-slider > .services-flex');
+
+            document.getElementById("technologies-slider").style.transition = " 0s";
+            document.getElementById("technologies-slider").style.transform = `translateX(-${width_of_element}px)`;
+
+            start_clone2 = elem[2].cloneNode(true);
+            end2 = end1 + 2;
+            elem[end2].after(start_clone2);
+            elem[0].remove();
+            tech_timeout = setTimeout(sliderTechnology, 25);
+        }
+
+        // top slider end
+    </script>
 @endsection
 @section('header_banner')
 
 @section('content')
     <main class="main">
+        @php
+            $technologies=['Amazon','android','Angular','Bootstrap','CDN','CSS','firebase','googlemaps','HTML','JavaScript','jQuery','kotlin','laravel',
+                                'MariaDB','MongoDB','mysql','Node.js','Opencart','php','postcss',
+                                'postgresql','ReactJS','Shopify','TensorFlow','TypeScript','Vue.js','Vuetify','Yii2'];
+        @endphp
+        <div class="services-technologies-slider" id="technologies-slider">
+
+            @foreach ($technologies as $t)
+                <div class="services-flex">
+                    @if($t!="")
+                        <img class="services-images" src="{{asset("/images/technologies/$t.svg")}}" alt="{{ $t }}"/>
+                        @php
+                            @endphp
+                    @endif
+                </div>
+            @endforeach
+
+        </div>
         <section class="projects-page" id="projects">
 
             <h2 class="article-title">Вёрстка сайтов (front-end) </h2>
@@ -119,7 +181,7 @@ Modx, Bitrix, Wordpress и т.д. Разработка различных тип
 
 
                 </div>
-                <div>
+                <div class="mob-hide">
 
                     @php
                         $technologies=['Amazon','android','Angular','Bootstrap','CDN','CSS','firebase','googlemaps','HTML','JavaScript','jQuery','kotlin','laravel',
@@ -137,7 +199,7 @@ Modx, Bitrix, Wordpress и т.д. Разработка различных тип
                         @endforeach
 
                     </div>
-                </span>
+
             </div>
 
 

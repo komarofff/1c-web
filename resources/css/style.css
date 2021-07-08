@@ -1,3 +1,12 @@
+@import url("./fonts/formular/stylesheet.css");
+@font-face {
+  font-family: Roboto;
+  src: url("./fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: Montserrat;
+  src: url("./fonts/Montserrat/Montserrat-Bold.ttf");
+}
 @import "./vars.css";
 @import "../scripts/slick/slider.css";
 @import "./base.css";
@@ -16,15 +25,7 @@
 @import "./mobile-menu.css";
 @import "./breakpoints.css";
 /* import fonts */
-@import url("../fonts/formular/stylesheet.css");
-@font-face {
-  font-family: Roboto;
-  src: url("../fonts/Roboto/Roboto-Regular.ttf");
-}
-@font-face {
-  font-family: Montserrat;
-  src: url("../fonts/Montserrat/Montserrat-Bold.ttf");
-}
+
 .none {
   display: none ;
 }

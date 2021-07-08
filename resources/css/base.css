@@ -35,6 +35,7 @@ a {
 }
 
 .container {
+    overflow: hidden;
     width: var(--container-width);
     max-width: 100%;
     box-shadow: 0 0 10px var(--shadow-color);
@@ -492,4 +493,11 @@ a {
     justify-content: center;
     flex-direction: row;
     flex-wrap: nowrap;
+}
+
+.services-technologies-slider {
+    display: none;
+}
+.technology-images-xxl{
+    margin-right: 30px;
 }

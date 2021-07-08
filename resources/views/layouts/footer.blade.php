@@ -26,8 +26,8 @@ $all_projects=\App\Http\Controllers\FunctionsController::getFooterData()
                     Разработка дополнительных модулей. Интеграция веб сайта с системой 1С.
                 </p>
                 <p><a href="{{ route('sertificate') }}">Сертификаты</a></p>
-                <p>Вёрстка сайта. Установка системы управления - <a href="tel:+375 29 709-60-78">Anatoliy Komarov</a> 
-                </p>
+<!-- <p>Вёрстка сайта. Установка системы управления - <a href="tel:+375 29 709-60-78">Anatoliy Komarov</a>
+               </p>-->
             </div>
             <div class="footer-contact-information">
                 <img class="footer__social-icons" src="{{asset('/images/social.svg')}}" alt="social">

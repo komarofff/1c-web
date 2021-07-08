@@ -1,3 +1,124 @@
+@font-face {
+    font-family: 'Formular';
+    src: url(/fonts/Formular-BlackItalic.eot?45a508566961a4178c49e65c2f4222b5);
+    src: local('Formular Black Italic'), local('Formular-BlackItalic'),
+        url(/fonts/Formular-BlackItalic.eot?45a508566961a4178c49e65c2f4222b5?#iefix) format('embedded-opentype'),
+        url(/fonts/Formular-BlackItalic.woff2?275c0f08ef1297a1b057e588110f4a19) format('woff2'),
+        url(/fonts/Formular-BlackItalic.woff?cc86b893d5b9820dd69b2d1e513251f5) format('woff'),
+        url(/fonts/Formular-BlackItalic.ttf?94ad564caa4a752f17f4f98c7a73884d) format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url(/fonts/Formular-MediumItalic.eot?b0bbbac9a8653a19e38350e46e287b1c);
+    src: local('Formular Medium Italic'), local('Formular-MediumItalic'),
+        url(/fonts/Formular-MediumItalic.eot?b0bbbac9a8653a19e38350e46e287b1c?#iefix) format('embedded-opentype'),
+        url(/fonts/Formular-MediumItalic.woff2?de70f523996c11ab0b978ad219a482ef) format('woff2'),
+        url(/fonts/Formular-MediumItalic.woff?4df224f86aca4ec44ff99c79ad511352) format('woff'),
+        url(/fonts/Formular-MediumItalic.ttf?9d5ca4584fdf6adb9e64c5a5f841706f) format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url(/fonts/Formular-Italic.eot?2be3b94ac4deb2150e05470a0848f9bd);
+    src: local('Formular Italic'), local('Formular-Italic'),
+        url(/fonts/Formular-Italic.eot?2be3b94ac4deb2150e05470a0848f9bd?#iefix) format('embedded-opentype'),
+        url(/fonts/Formular-Italic.woff2?b886fadae71f723aa017f8dd44810634) format('woff2'),
+        url(/fonts/Formular-Italic.woff?40660a730e640d314f5335e4642ec5c5) format('woff'),
+        url(/fonts/Formular-Italic.ttf?2127cdd93a85c8eb64ea2a811e275b95) format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url(/fonts/Formular-LightItalic.eot?b9943a01a829f59631b16e188ca04dd3);
+    src: local('Formular Light Italic'), local('Formular-LightItalic'),
+        url(/fonts/Formular-LightItalic.eot?b9943a01a829f59631b16e188ca04dd3?#iefix) format('embedded-opentype'),
+        url(/fonts/Formular-LightItalic.woff2?b803e0ca1528434f53715137939fa7b6) format('woff2'),
+        url(/fonts/Formular-LightItalic.woff?7953a26bf372d7a83ece96d2a86cddd8) format('woff'),
+        url(/fonts/Formular-LightItalic.ttf?9a4b432b8a713abf4d580166fc4620d7) format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url(/fonts/Formular-Black.eot?94facc1499af36c3d07f24e0ca74dae6);
+    src: local('Formular Black'), local('Formular-Black'),
+        url(/fonts/Formular-Black.eot?94facc1499af36c3d07f24e0ca74dae6?#iefix) format('embedded-opentype'),
+        url(/fonts/Formular-Black.woff2?189721a2be64075e91a155b1b19543f6) format('woff2'),
+        url(/fonts/Formular-Black.woff?2e3ac6f2f7c154eaac537bfdfba40438) format('woff'),
+        url(/fonts/Formular-Black.ttf?7c65362b4b3387a0d012b9aac715c28c) format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url(/fonts/Formular-Light.eot?3dac2de675eb298474e66483545d381c);
+    src: local('Formular Light'), local('Formular-Light'),
+        url(/fonts/Formular-Light.eot?3dac2de675eb298474e66483545d381c?#iefix) format('embedded-opentype'),
+        url(/fonts/Formular-Light.woff2?91907b54587b01cd3e56b920048ac719) format('woff2'),
+        url(/fonts/Formular-Light.woff?40042297f1cebc2995f1259eeffb7df3) format('woff'),
+        url(/fonts/Formular-Light.ttf?50fba62cdd46b12e7137532f32e63dc2) format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url(/fonts/Formular.eot?4fcc9e4548d839128a439d7cff833146);
+    src: local('Formular'),
+        url(/fonts/Formular.eot?4fcc9e4548d839128a439d7cff833146?#iefix) format('embedded-opentype'),
+        url(/fonts/Formular.woff2?8e0d9e35afc128570c17219b3433c864) format('woff2'),
+        url(/fonts/Formular.woff?254f9c824c206145dfc14eb89feaec37) format('woff'),
+        url(/fonts/Formular.ttf?6d3c9849d2a87420722060c581c73100) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url(/fonts/Formular-Medium.eot?c2c47d2b49a706a91b7212691ecc34b7);
+    src: local('Formular Medium'), local('Formular-Medium'),
+        url(/fonts/Formular-Medium.eot?c2c47d2b49a706a91b7212691ecc34b7?#iefix) format('embedded-opentype'),
+        url(/fonts/Formular-Medium.woff2?24b26c423f21f3f41e1a183b5af91ebe) format('woff2'),
+        url(/fonts/Formular-Medium.woff?7637d0b07e080a2003275005acf85f70) format('woff'),
+        url(/fonts/Formular-Medium.ttf?122b8d1653db0a0522b2ce4140cbbb33) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url(/fonts/Formular-BoldItalic.eot?bc4b0a397a78a6e7f32113f27b2f64e1);
+    src: local('Formular Bold Italic'), local('Formular-BoldItalic'),
+        url(/fonts/Formular-BoldItalic.eot?bc4b0a397a78a6e7f32113f27b2f64e1?#iefix) format('embedded-opentype'),
+        url(/fonts/Formular-BoldItalic.woff2?f8005b744535c7f50fa19e8ab8c49a37) format('woff2'),
+        url(/fonts/Formular-BoldItalic.woff?caccb335077965b63889ad3fa061b958) format('woff'),
+        url(/fonts/Formular-BoldItalic.ttf?2ea1b7cd67cd35f2de9489bb1e704ea3) format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url(/fonts/Formular-Bold.eot?eec3057f95a3cae260e6e88bccba140d);
+    src: local('Formular Bold'), local('Formular-Bold'),
+        url(/fonts/Formular-Bold.eot?eec3057f95a3cae260e6e88bccba140d?#iefix) format('embedded-opentype'),
+        url(/fonts/Formular-Bold.woff2?106d48c834cfb3554b2dab6451c8f44c) format('woff2'),
+        url(/fonts/Formular-Bold.woff?65f8c38e595ba05152220d5219fad8d2) format('woff'),
+        url(/fonts/Formular-Bold.ttf?5db394c7c7a81319c8c40dc52904ec02) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
 :root {
   --container-width: 100%;
   --color-white: #fff; 
@@ -466,6 +587,7 @@ a {
 }
 
 .container {
+    overflow: hidden;
     width: var(--container-width);
     max-width: 100%;
     box-shadow: 0 0 10px var(--shadow-color);
@@ -999,6 +1121,13 @@ a {
     justify-content: center;
     flex-direction: row;
     flex-wrap: nowrap;
+}
+
+.services-technologies-slider {
+    display: none;
+}
+.technology-images-xxl{
+    margin-right: 30px;
 }
 
 .header{
@@ -2223,6 +2352,36 @@ padding: 10px ;
   }
 }
 @media (max-width: 768px) {
+    .mob-hide{
+        display: none;
+    }
+    .container{
+        font-size: 18px;
+    }
+    .project-name p{
+        font-size: 50%;
+    }
+    .article-title{
+        top:10px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .md-none{
+        display: none;
+    }
+    .services-technologies-slider {
+        margin: 50px 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 100%;
+        padding: 0;
+    }
+    .services-images {
+        max-height: 50px;
+        width: 100px;
+        margin: 0 10px;
+    }
   .services__description-text {
     max-width: 100%;
   }
@@ -2320,6 +2479,9 @@ padding: 10px ;
   .projects-page .article-title{
     left:5%;
   }
+    .margin-top-big{
+        margin-top: 75px;
+    }
 }
 @media (max-width: 560px) {
   /* .slick-slide{
@@ -2365,7 +2527,7 @@ padding: 10px ;
     font-size: 16px;
   } */
   .services__tabs-links p {
-    
+
     font-size: 14px;
   }
   .services__tabs-links li {
@@ -2422,128 +2584,6 @@ padding: 10px ;
 }
 
 @font-face {
-    font-family: 'Formular';
-    src: url(/fonts/Formular-BlackItalic.eot?45a508566961a4178c49e65c2f4222b5);
-    src: local('Formular Black Italic'), local('Formular-BlackItalic'),
-        url(/fonts/Formular-BlackItalic.eot?45a508566961a4178c49e65c2f4222b5?#iefix) format('embedded-opentype'),
-        url(/fonts/Formular-BlackItalic.woff2?275c0f08ef1297a1b057e588110f4a19) format('woff2'),
-        url(/fonts/Formular-BlackItalic.woff?cc86b893d5b9820dd69b2d1e513251f5) format('woff'),
-        url(/fonts/Formular-BlackItalic.ttf?94ad564caa4a752f17f4f98c7a73884d) format('truetype');
-    font-weight: 900;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Formular';
-    src: url(/fonts/Formular-MediumItalic.eot?b0bbbac9a8653a19e38350e46e287b1c);
-    src: local('Formular Medium Italic'), local('Formular-MediumItalic'),
-        url(/fonts/Formular-MediumItalic.eot?b0bbbac9a8653a19e38350e46e287b1c?#iefix) format('embedded-opentype'),
-        url(/fonts/Formular-MediumItalic.woff2?de70f523996c11ab0b978ad219a482ef) format('woff2'),
-        url(/fonts/Formular-MediumItalic.woff?4df224f86aca4ec44ff99c79ad511352) format('woff'),
-        url(/fonts/Formular-MediumItalic.ttf?9d5ca4584fdf6adb9e64c5a5f841706f) format('truetype');
-    font-weight: 500;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Formular';
-    src: url(/fonts/Formular-Italic.eot?2be3b94ac4deb2150e05470a0848f9bd);
-    src: local('Formular Italic'), local('Formular-Italic'),
-        url(/fonts/Formular-Italic.eot?2be3b94ac4deb2150e05470a0848f9bd?#iefix) format('embedded-opentype'),
-        url(/fonts/Formular-Italic.woff2?b886fadae71f723aa017f8dd44810634) format('woff2'),
-        url(/fonts/Formular-Italic.woff?40660a730e640d314f5335e4642ec5c5) format('woff'),
-        url(/fonts/Formular-Italic.ttf?2127cdd93a85c8eb64ea2a811e275b95) format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Formular';
-    src: url(/fonts/Formular-LightItalic.eot?b9943a01a829f59631b16e188ca04dd3);
-    src: local('Formular Light Italic'), local('Formular-LightItalic'),
-        url(/fonts/Formular-LightItalic.eot?b9943a01a829f59631b16e188ca04dd3?#iefix) format('embedded-opentype'),
-        url(/fonts/Formular-LightItalic.woff2?b803e0ca1528434f53715137939fa7b6) format('woff2'),
-        url(/fonts/Formular-LightItalic.woff?7953a26bf372d7a83ece96d2a86cddd8) format('woff'),
-        url(/fonts/Formular-LightItalic.ttf?9a4b432b8a713abf4d580166fc4620d7) format('truetype');
-    font-weight: 300;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Formular';
-    src: url(/fonts/Formular-Black.eot?94facc1499af36c3d07f24e0ca74dae6);
-    src: local('Formular Black'), local('Formular-Black'),
-        url(/fonts/Formular-Black.eot?94facc1499af36c3d07f24e0ca74dae6?#iefix) format('embedded-opentype'),
-        url(/fonts/Formular-Black.woff2?189721a2be64075e91a155b1b19543f6) format('woff2'),
-        url(/fonts/Formular-Black.woff?2e3ac6f2f7c154eaac537bfdfba40438) format('woff'),
-        url(/fonts/Formular-Black.ttf?7c65362b4b3387a0d012b9aac715c28c) format('truetype');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Formular';
-    src: url(/fonts/Formular-Light.eot?3dac2de675eb298474e66483545d381c);
-    src: local('Formular Light'), local('Formular-Light'),
-        url(/fonts/Formular-Light.eot?3dac2de675eb298474e66483545d381c?#iefix) format('embedded-opentype'),
-        url(/fonts/Formular-Light.woff2?91907b54587b01cd3e56b920048ac719) format('woff2'),
-        url(/fonts/Formular-Light.woff?40042297f1cebc2995f1259eeffb7df3) format('woff'),
-        url(/fonts/Formular-Light.ttf?50fba62cdd46b12e7137532f32e63dc2) format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Formular';
-    src: url(/fonts/Formular.eot?4fcc9e4548d839128a439d7cff833146);
-    src: local('Formular'),
-        url(/fonts/Formular.eot?4fcc9e4548d839128a439d7cff833146?#iefix) format('embedded-opentype'),
-        url(/fonts/Formular.woff2?8e0d9e35afc128570c17219b3433c864) format('woff2'),
-        url(/fonts/Formular.woff?254f9c824c206145dfc14eb89feaec37) format('woff'),
-        url(/fonts/Formular.ttf?6d3c9849d2a87420722060c581c73100) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Formular';
-    src: url(/fonts/Formular-Medium.eot?c2c47d2b49a706a91b7212691ecc34b7);
-    src: local('Formular Medium'), local('Formular-Medium'),
-        url(/fonts/Formular-Medium.eot?c2c47d2b49a706a91b7212691ecc34b7?#iefix) format('embedded-opentype'),
-        url(/fonts/Formular-Medium.woff2?24b26c423f21f3f41e1a183b5af91ebe) format('woff2'),
-        url(/fonts/Formular-Medium.woff?7637d0b07e080a2003275005acf85f70) format('woff'),
-        url(/fonts/Formular-Medium.ttf?122b8d1653db0a0522b2ce4140cbbb33) format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Formular';
-    src: url(/fonts/Formular-BoldItalic.eot?bc4b0a397a78a6e7f32113f27b2f64e1);
-    src: local('Formular Bold Italic'), local('Formular-BoldItalic'),
-        url(/fonts/Formular-BoldItalic.eot?bc4b0a397a78a6e7f32113f27b2f64e1?#iefix) format('embedded-opentype'),
-        url(/fonts/Formular-BoldItalic.woff2?f8005b744535c7f50fa19e8ab8c49a37) format('woff2'),
-        url(/fonts/Formular-BoldItalic.woff?caccb335077965b63889ad3fa061b958) format('woff'),
-        url(/fonts/Formular-BoldItalic.ttf?2ea1b7cd67cd35f2de9489bb1e704ea3) format('truetype');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Formular';
-    src: url(/fonts/Formular-Bold.eot?eec3057f95a3cae260e6e88bccba140d);
-    src: local('Formular Bold'), local('Formular-Bold'),
-        url(/fonts/Formular-Bold.eot?eec3057f95a3cae260e6e88bccba140d?#iefix) format('embedded-opentype'),
-        url(/fonts/Formular-Bold.woff2?106d48c834cfb3554b2dab6451c8f44c) format('woff2'),
-        url(/fonts/Formular-Bold.woff?65f8c38e595ba05152220d5219fad8d2) format('woff'),
-        url(/fonts/Formular-Bold.ttf?5db394c7c7a81319c8c40dc52904ec02) format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-
-/* import fonts */
-@font-face {
   font-family: Roboto;
   src: url(/fonts/Roboto-Regular.ttf?a8d6ac03c7b96b7acb6228ff2676139d);
 }
@@ -2551,6 +2591,8 @@ padding: 10px ;
   font-family: Montserrat;
   src: url(/fonts/Montserrat-Bold.ttf?079ca05d3ded9bc107ab8a8da013be22);
 }
+/* import fonts */
+
 .none {
   display: none ;
 }
