@@ -1,17 +1,17 @@
 @extends ('layouts.app')
 
-@section('title', 'Вёрстка сайтов (front-end).  ООО ПО Системс групп')
-@section('description', 'Создание сайтов с использованием современных технологий, в том числе GRID и FLEX. Профессиональный
-подход и железные сроки по системе Pixel perfect («пиксель в пиксель»). Адаптивность, кроссбраузерность и интеграция CMS:
-Modx, Bitrix, Wordpress и т.д. Разработка различных типов сайтов: от лендинга до интернет-магазина с тысячами товаров.
+@section('title', 'Посадка шаблона на CMS -  Wordpress, OpenCart, Shopify, Bitrix, Modx.  ООО ПО Системс групп')
+@section('description', 'Подготовка и установка html-шаблонов, включая самописные, на различные CMS. Полная и корректная
+                    интеграция с обязательным тестированием на кроссбраузерность. В штате работают сертифицированные
+                    программисты по Wordpress, Shopify, OpenCart, Bitrix , и другим системам.
 ')
 @section('og')
-    <meta property="og:url" content="https://1c-web.by/front_end"/>
+    <meta property="og:url" content="https://1c-web.by/crm_frontend"/>
     <meta property="og:type" content="article"/>
-    <meta property="og:title" content="Вёрстка сайтов (front-end).  ООО ПО Системс групп "/>
-    <meta property="og:description" content="Создание сайтов с использованием современных технологий, в том числе GRID и FLEX. Профессиональный
-подход и железные сроки по системе Pixel perfect («пиксель в пиксель»). Адаптивность, кроссбраузерность и интеграция CMS:
-Modx, Bitrix, Wordpress и т.д. Разработка различных типов сайтов: от лендинга до интернет-магазина с тысячами товаров."/>
+    <meta property="og:title" content="Посадка шаблона на CMS -  Wordpress, OpenCart, Shopify, Bitrix, Modx.  ООО ПО Системс групп"/>
+    <meta property="og:description" content="Подготовка и установка html-шаблонов, включая самописные, на различные CMS. Полная и корректная
+                    интеграция с обязательным тестированием на кроссбраузерность. В штате работают сертифицированные
+                    программисты по Wordpress, Shopify, OpenCart, Bitrix , и другим системам."/>
     <meta property="og:image" content="https://1c-web.by/images/og-po_systems_group.jpg"/>
     <meta property="og:image:width" content="742"/>
     <meta property="og:image:height" content="575"/>
@@ -26,119 +26,118 @@ Modx, Bitrix, Wordpress и т.д. Разработка различных тип
     <script src="{{asset ('/scripts/slider.js')}}"></script>
     <script src="{{asset ('/scripts/tabs.js')}}"></script>
     <script src="{{asset ('/scripts/buttons.js')}}"></script>
+    <script>
+
+        // top slider start
+        setTimeout(firstClone, 10);
+        const speed = 6; // slider speed in seconds
+        const timeout = speed * 1000;
+        elem = document.querySelectorAll('.services-technologies-slider > .services-flex');
+        width_of_element = elem[0].offsetWidth;
+        transition_width = width_of_element * 2;
+        end1 = elem.length - 1;
+        end = elem.length;
+
+        function firstClone() {
+            document.getElementById("technologies-slider").style.transition = " 0s";
+            document.getElementById("technologies-slider").style.transform = `translateX(-${width_of_element}px)`;
+            start_clone1 = elem[end1].cloneNode(true);
+            elem[0].before(start_clone1);
+            start_clone1 = elem[0].cloneNode(true);
+            elem[end1].after(start_clone1);
+            sliderTechnology();
+        }
+
+        function sliderTechnology() {
+            document.getElementById("technologies-slider").style.transition = ` ${speed}s linear`;
+            document.getElementById("technologies-slider").style.transform = `translateX(-${transition_width}px)`;
+            setTimeout(secondClone, timeout);
+
+        }
+
+        function secondClone() {
+            elem = document.querySelectorAll('.services-technologies-slider > .services-flex');
+
+            document.getElementById("technologies-slider").style.transition = " 0s";
+            document.getElementById("technologies-slider").style.transform = `translateX(-${width_of_element}px)`;
+
+            start_clone2 = elem[2].cloneNode(true);
+            end2 = end1 + 2;
+            elem[end2].after(start_clone2);
+            elem[0].remove();
+            tech_timeout = setTimeout(sliderTechnology, 25);
+        }
+
+        // top slider end
+    </script>
 @endsection
 @section('header_banner')
 
 @section('content')
     <main class="main">
+        @php
+            $technologies=['Amazon','android','Angular','Bootstrap','CDN','CSS','firebase','googlemaps','HTML','JavaScript','jQuery','kotlin','laravel',
+                                'MariaDB','MongoDB','mysql','Node.js','Opencart','php','postcss',
+                                'postgresql','ReactJS','Shopify','TensorFlow','TypeScript','Vue.js','Vuetify','Yii2'];
+        @endphp
+        <div class="services-technologies-slider" id="technologies-slider">
+
+            @foreach ($technologies as $t)
+                <div class="services-flex">
+                    @if($t!="")
+                        <img class="services-images" src="{{asset("/images/technologies/$t.svg")}}" alt="{{ $t }}"/>
+                        @php
+                            @endphp
+                    @endif
+                </div>
+            @endforeach
+
+        </div>
         <section class="projects-page" id="projects">
 
-            <h2 class="article-title">Вёрстка сайтов (front-end) </h2>
+            <h2 class="article-title">Посадка шаблона на CMS  </h2>
             <div class="grid_2_column margin-top-big">
                 <div>
-                    <img class="services__description-image" src="{{asset('/images/services-1.jpg')}}" alt="image">
-                    <p>
+                    <img class="services__description-image" src="{{asset('/images/services-6.jpg')}}" alt="image">
+                    <p>Посадка шаблона на CMS (систему управления контентом, например, Wordpress) включает в себя его
+                    предварительную подготовку. В одних случаях, требуется уникализация шаблона, чтобы сайт выделялся, а
+                    не представлял собой очередного двойника. В других — переподготовка шаблона одной CMS для переноса
+                        на другую. Например, сайт на MoDX, но понравился шаблон из Wordpress.</p>
 
+                    <p>Следующий этап — интеграция шаблона и системы управления. В ходе ее нужно сделать типовое наполнение
+                    и запустить тестирование с обязательной проверкой на кроссбраузерность.</p>
 
-                        Верстка сайта — это творческий процесс, в котором задействованы дизайнер, разработчик и
-                        заказчик. В отличие от полиграфической (журнальной/газетной) верстки, web-разработка учитывает
-                        не только стилевую гармонию страницы, но и адаптивность ее отображения в различных браузерах и
-                        устройствах (десктоп, смартфон и т.д.).
-                    </p>
-                    <p>
-                        Еще одна сложность в том, что ежедневно (и это не преувеличение!) расширяется Интернет:
-                        увеличивается количество пользователей и web-площадок. Эти изменения требует постоянного
-                        совершенствования технологий, поэтому, если стоять на месте, то сделать сайт, который будет
-                        актуален сегодня и в будущем — не получится!
-                    </p>
-                    <p>
-                        Наша команда программистов состоит из спецов международного уровня, которые работали на
-                        различных рынках, в том числе европейских. Для создания front-end (клиентской стороны
-                        интерфейса) они используют современные технологии: CSS, Scss, Webpack, HTML5, JavaScript,
-                        jQuery, Vue.js, Bootstrap,TailWind. С их помощью можно правильно «закодить» сайт, чтобы он
-                        одинаково хорошо отображаться на любых устройствах (адаптивность) и различных браузерах
-                        (кроссбраузерность).
-                    </p>
-                    <p>
-                        Есть опыт успешной интеграции сайта с различными системами управления: Modx, Bitrix, Shopify,
-                        Wordpress и OpenCart. При необходимости, даже переписываем стандартный код CMS, как и поступили
-                        с сайтом TDM-electric, где оптимизировали Modx.
-                    </p>
-                    <p>
-                        За время работы выполнили более 200 проектов, в числе которых 20 сайтов с уникальным дизайном.
-                        Разрабатывали площадки для дистрибьюторов, рестораторов, производителей товаров и услуг, в их
-                        числе сайты: по аренде серверов, оказанию бухгалтерских услуг, продаже электротехнических
-                        товаров, а также школы по изучению итальянского языка и многие другие проекты.
-                    </p>
-                    Исходя из потребностей бизнеса, выполняли сайты различного масштаба:
-                    <ul>
-                        <li>одностраничники (landing page) — для небольших компаний с целью презентации товара/услуги
-                            или
-                            проведения рекламной акции;
-                        </li>
-                        <li>
-                            многостраничные корпоративные сайты — крупным и средним компаниям для широкого освещения
-                            своей
-                            деятельности;
-                        </li>
-                        <li>интернет-магазины — на нашем счету гигант с ассортиментом более чем 10 тыс. товаров.</li>
-                    </ul>
+                    <p>Отметим, что скорость внедрения напрямую зависит от особенностей модуля. Если использовать готовый
+                    шаблон, то посадка займет считанное время. Если самописный, то процесс может растянуться на более
+                    длительный срок. Учитывайте этот фактор, когда будете сомневаться, что же выбрать: шаблон или
+                    уникальный дизайн?</p>
 
-                    <strong> Чтобы подробнее узнать о выполненных работах, перейдите в раздел <a
-                            href="{{route('projects')}}">«Наши проекты»</a></strong>
-
-                    <p> Делали как сайты «с нуля», так и доделывали чужие «кривые коды». Один из интереснейших проектов
-                        — TDM-electric. Устаревший каталог с «бесконечным полотнищем товаров» переделали в полноценный
-                        интернет-магазин с корзиной, личным кабинетом и автоматической выпиской счетов. На эти
-                        масштабные работы ушло всего 1,5 месяца.</p>
-                    <p>
-                        Если говорить о стандартных сроках, то они, в зависимости от сложности, варьируются от
-                        нескольких дней до нескольких месяцев. Одно дело сделать шаблонный сайт с простым дизайном, и
-                        совсем другое проработать детальный рисунок звездного неба, где каждой звездочке соответствует
-                        своя анимация или переход на отдельную страницу.
-                    </p>
-                    <p>
-                        Если готовы начать сотрудничество, то заполните форму и в ближайшее время мы свяжемся с вами!
-                        После телефонного разговора предварительно оценим срок исполнения и стоимость заказа. Если
-                        стоимость вас устроит (у нас она находится в пределах средней по рынку), то проведем серию
-                        личных встреч.
-                    </p>
-                    <p>
-                        На одной из них будет присутствовать разработчик, который на экране компьютера продемонстрирует
-                        вам разницу того или иного варианта верстки. Такая долгая подготовительная работа — это гарантия
-                        защиты от ошибок, исправление которых уже на стадии разработки может дорого обойтись.
-                    </p>
-                    <p>
-                        <strong>
-                            Даже, если не знаете с чего начать — все равно оставляйте заявку. Не раз создавали отличные
-                            сайты, хотя в начале сотрудничества у клиента был только листик А4 с не до конца и от руки
-                            нарисованной структурой сайта.
-                        </strong>
-
-                    </p>
-
+                    <p>В нашем штате работают сертифицированные и опытные разработчики по различным системам управления, в
+                    том числе MODX, Opencart, Wordpress и Битрикс. Чтобы подробно узнать о выполненных работах,
+                        перейдите в раздел <a href="{{ route('projects') }}">«Наши проекты».</a></p>
+                    <p><strong>
+                    Для начала сотрудничества заполните форму обратной связи или пришлите заявку на e-mail. В ближайшее
+                    время наш менеджер свяжется с вами, чтобы обсудить детали, предложить способы решения и оценить
+                    стоимость проекта.
+                    </strong></p>
 
                 </div>
                 <div>
 
-                    @php
-                        $technologies=['Amazon','android','Angular','Bootstrap','CDN','CSS','firebase','googlemaps','HTML','JavaScript','jQuery','kotlin','laravel',
-                                            'MariaDB','MongoDB','mysql','Node.js','Opencart','php','postcss',
-                                            'postgresql','ReactJS','Shopify','TensorFlow','TypeScript','Vue.js','Vuetify','Yii2'];
-                    @endphp
                     <h3>Технологии:</h3>
 
                     <div class="technology">
                         @foreach($technologies as $item)
                             <p>
-                        <img src="{{asset ("/images/technologies/$item.svg")}}" alt="{{$item}}" title="{{$item}}">
+                                <img src="{{asset ("/images/technologies/$item.svg")}}" alt="{{$item}}"
+                                     title="{{$item}}">
                                 <span> {{$item}} </span>
                             </p>
                         @endforeach
 
                     </div>
-                </span>
-            </div>
+                    </span>
+                </div>
 
 
         </section>

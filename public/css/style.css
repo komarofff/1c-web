@@ -1709,6 +1709,7 @@ padding: 10px ;
   flex-grow: 1;
 }
 .work-block-description > p {
+    font-family: Formular;
   position: relative;
   display: block;
   max-width: 500px;

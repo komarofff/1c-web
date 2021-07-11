@@ -1,11 +1,11 @@
-@import url("./fonts/formular/stylesheet.css");
+@import url("../fonts/formular/stylesheet.css");
 @font-face {
   font-family: Roboto;
-  src: url("./fonts/Roboto/Roboto-Regular.ttf");
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
 }
 @font-face {
   font-family: Montserrat;
-  src: url("./fonts/Montserrat/Montserrat-Bold.ttf");
+  src: url("../fonts/Montserrat/Montserrat-Bold.ttf");
 }
 @import "./vars.css";
 @import "../scripts/slick/slider.css";

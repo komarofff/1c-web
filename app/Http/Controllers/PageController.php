@@ -112,7 +112,7 @@ class PageController extends Controller
             'body' => '',
         ];
 
-        return view("pages.web_1C_integration", $data);
+        return view("pages.1C_integration", $data);
     }
 
     public function projects()

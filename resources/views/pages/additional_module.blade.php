@@ -1,17 +1,17 @@
 @extends ('layouts.app')
 
-@section('title', 'Вёрстка сайтов (front-end).  ООО ПО Системс групп')
-@section('description', 'Создание сайтов с использованием современных технологий, в том числе GRID и FLEX. Профессиональный
-подход и железные сроки по системе Pixel perfect («пиксель в пиксель»). Адаптивность, кроссбраузерность и интеграция CMS:
-Modx, Bitrix, Wordpress и т.д. Разработка различных типов сайтов: от лендинга до интернет-магазина с тысячами товаров.
+@section('title', 'Разработка дополнительных модулей для веб-сайтов.  ООО ПО Системс групп')
+@section('description', 'Разработка приложений и модулей различными языками программирования: PHP, HTML и Java Script.
+Интеграция приложений с существующими сайтами. Широкий опыт в различных нишах: услуги, e-commerce, онлайн-образование и другие.
+ Создание креативных и маркетинговых модулей .
 ')
 @section('og')
-    <meta property="og:url" content="https://1c-web.by/front_end"/>
+    <meta property="og:url" content="https://1c-web.by/additional_module"/>
     <meta property="og:type" content="article"/>
-    <meta property="og:title" content="Вёрстка сайтов (front-end).  ООО ПО Системс групп "/>
-    <meta property="og:description" content="Создание сайтов с использованием современных технологий, в том числе GRID и FLEX. Профессиональный
-подход и железные сроки по системе Pixel perfect («пиксель в пиксель»). Адаптивность, кроссбраузерность и интеграция CMS:
-Modx, Bitrix, Wordpress и т.д. Разработка различных типов сайтов: от лендинга до интернет-магазина с тысячами товаров."/>
+    <meta property="og:title" content="Разработка дополнительных модулей для веб-сайтов. ООО ПО Системс групп "/>
+    <meta property="og:description" content="Разработка приложений и модулей различными языками программирования: PHP, HTML и Java Script.
+Интеграция приложений с существующими сайтами. Широкий опыт в различных нишах: услуги, e-commerce, онлайн-образование и другие.
+ Создание креативных и маркетинговых модулей ."/>
     <meta property="og:image" content="https://1c-web.by/images/og-po_systems_group.jpg"/>
     <meta property="og:image:width" content="742"/>
     <meta property="og:image:height" content="575"/>
@@ -26,100 +26,126 @@ Modx, Bitrix, Wordpress и т.д. Разработка различных тип
     <script src="{{asset ('/scripts/slider.js')}}"></script>
     <script src="{{asset ('/scripts/tabs.js')}}"></script>
     <script src="{{asset ('/scripts/buttons.js')}}"></script>
+    <script>
+
+        // top slider start
+        setTimeout(firstClone, 10);
+        const speed = 6; // slider speed in seconds
+        const timeout = speed * 1000;
+        elem = document.querySelectorAll('.services-technologies-slider > .services-flex');
+        width_of_element = elem[0].offsetWidth;
+        transition_width = width_of_element * 2;
+        end1 = elem.length - 1;
+        end = elem.length;
+
+        function firstClone() {
+            document.getElementById("technologies-slider").style.transition = " 0s";
+            document.getElementById("technologies-slider").style.transform = `translateX(-${width_of_element}px)`;
+            start_clone1 = elem[end1].cloneNode(true);
+            elem[0].before(start_clone1);
+            start_clone1 = elem[0].cloneNode(true);
+            elem[end1].after(start_clone1);
+            sliderTechnology();
+        }
+
+        function sliderTechnology() {
+            document.getElementById("technologies-slider").style.transition = ` ${speed}s linear`;
+            document.getElementById("technologies-slider").style.transform = `translateX(-${transition_width}px)`;
+            setTimeout(secondClone, timeout);
+
+        }
+
+        function secondClone() {
+            elem = document.querySelectorAll('.services-technologies-slider > .services-flex');
+
+            document.getElementById("technologies-slider").style.transition = " 0s";
+            document.getElementById("technologies-slider").style.transform = `translateX(-${width_of_element}px)`;
+
+            start_clone2 = elem[2].cloneNode(true);
+            end2 = end1 + 2;
+            elem[end2].after(start_clone2);
+            elem[0].remove();
+            tech_timeout = setTimeout(sliderTechnology, 25);
+        }
+
+        // top slider end
+    </script>
 @endsection
 @section('header_banner')
 
 @section('content')
     <main class="main">
+        @php
+            $technologies=['Amazon','android','Angular','Bootstrap','CDN','CSS','firebase','googlemaps','HTML','JavaScript','jQuery','kotlin','laravel',
+                                'MariaDB','MongoDB','mysql','Node.js','Opencart','php','postcss',
+                                'postgresql','ReactJS','Shopify','TensorFlow','TypeScript','Vue.js','Vuetify','Yii2'];
+        @endphp
+        <div class="services-technologies-slider" id="technologies-slider">
+
+            @foreach ($technologies as $t)
+                <div class="services-flex">
+                    @if($t!="")
+                        <img class="services-images" src="{{asset("/images/technologies/$t.svg")}}" alt="{{ $t }}"/>
+                        @php
+                            @endphp
+                    @endif
+                </div>
+            @endforeach
+
+        </div>
         <section class="projects-page" id="projects">
 
-            <h2 class="article-title">Вёрстка сайтов (front-end) </h2>
+            <h2 class="article-title">Разработка дополнительных модулей для веб-сайтов</h2>
             <div class="grid_2_column margin-top-big">
                 <div>
-                    <img class="services__description-image" src="{{asset('/images/services-1.jpg')}}" alt="image">
-                    <p>
+                    <img class="services__description-image" src="{{asset('/images/services-4.jpg')}}" alt="image">
 
-
-                        Верстка сайта — это творческий процесс, в котором задействованы дизайнер, разработчик и
-                        заказчик. В отличие от полиграфической (журнальной/газетной) верстки, web-разработка учитывает
-                        не только стилевую гармонию страницы, но и адаптивность ее отображения в различных браузерах и
-                        устройствах (десктоп, смартфон и т.д.).
-                    </p>
-                    <p>
-                        Еще одна сложность в том, что ежедневно (и это не преувеличение!) расширяется Интернет:
-                        увеличивается количество пользователей и web-площадок. Эти изменения требует постоянного
-                        совершенствования технологий, поэтому, если стоять на месте, то сделать сайт, который будет
-                        актуален сегодня и в будущем — не получится!
-                    </p>
-                    <p>
-                        Наша команда программистов состоит из спецов международного уровня, которые работали на
-                        различных рынках, в том числе европейских. Для создания front-end (клиентской стороны
-                        интерфейса) они используют современные технологии: CSS, Scss, Webpack, HTML5, JavaScript,
-                        jQuery, Vue.js, Bootstrap,TailWind. С их помощью можно правильно «закодить» сайт, чтобы он
-                        одинаково хорошо отображаться на любых устройствах (адаптивность) и различных браузерах
-                        (кроссбраузерность).
-                    </p>
-                    <p>
-                        Есть опыт успешной интеграции сайта с различными системами управления: Modx, Bitrix, Shopify,
-                        Wordpress и OpenCart. При необходимости, даже переписываем стандартный код CMS, как и поступили
-                        с сайтом TDM-electric, где оптимизировали Modx.
-                    </p>
-                    <p>
-                        За время работы выполнили более 200 проектов, в числе которых 20 сайтов с уникальным дизайном.
-                        Разрабатывали площадки для дистрибьюторов, рестораторов, производителей товаров и услуг, в их
-                        числе сайты: по аренде серверов, оказанию бухгалтерских услуг, продаже электротехнических
-                        товаров, а также школы по изучению итальянского языка и многие другие проекты.
-                    </p>
-                    Исходя из потребностей бизнеса, выполняли сайты различного масштаба:
+                    <p>Сайт — это «живая платформа», которая должна постоянно развиваться вместе с бизнесом. Здесь важно
+                        не столько соответствие новым визуальным тенденциям (хотя и это тоже), сколько развитие
+                        юзабилити, чтобы клиенту было удобно покупать у вас, а еще лучше возвращаться снова и снова.
+                        По этой причине периодически стоит внедрять новые модули, среди которых может быть:</p>
                     <ul>
-                        <li>одностраничники (landing page) — для небольших компаний с целью презентации товара/услуги
-                            или
-                            проведения рекламной акции;
-                        </li>
-                        <li>
-                            многостраничные корпоративные сайты — крупным и средним компаниям для широкого освещения
-                            своей
-                            деятельности;
-                        </li>
-                        <li>интернет-магазины — на нашем счету гигант с ассортиментом более чем 10 тыс. товаров.</li>
+                        <li><p><strong>блог </strong>— подойдет компаниям, которые хотят создавать положительное
+                                комьюнити и демонстрировать
+                                свою экспертность;</p></li>
+                        <li><p><strong>калькулятор</strong> — актуально для тех, кто оказывает услуги или продает
+                                материалы. Такого рода
+                                модули подходят дизайн-студиям, магазинам стройматериалов, логистическим и другим
+                                компаниям;</p></li>
+                        <li><p><strong>корзина</strong> — если у вас онлайн-магазин, то этот модуль обязателен к
+                                внедрению. С его помощью вы
+                                точно увеличите свои продажи;</p></li>
+                        <li><p><strong>личный кабинет </strong>— несет различные функции, подходит как ритейлерам, так и
+                                онлайн-образованию;</p></li>
+                        <li><p><strong>подписка на новости</strong> — позволяет поддерживать постоянную коммуникацию с
+                                клиентами;</p></li>
+                        <li><p><strong>форма обратной связи</strong> — повышает лидогенерацию и конверсионность трафика
+                                на сайте.</p></li>
                     </ul>
+                    <p>Бывают более специфичные модули. Например, внедряли программу, которая позволяла брать товары
+                        вместе с ценой с сайта производителя и переносить их на сайт поставщика. Причем, при переносе
+                        проводилась конвертации с российских рублей в белорусские согласно актуальному курсу Нацбанка
+                        .</p>
+                    <p>За время работы разработали и внедрили много дополнительных модулей, в их числе калькулятор в
+                        виде грузовой машины. Чтобы больше узнать о реализованных проектах, перейдите в раздел
+                        <a href="{{route('projects')}}">«Наши
+                            проекты».</a></p>
 
-                    <strong> Чтобы подробнее узнать о выполненных работах, перейдите в раздел <a
-                            href="{{route('projects')}}">«Наши проекты»</a></strong>
+                    <p>Для начала сотрудничества оставьте заявку через форму обратной связи или e-mail. В ближайшее
+                        время наш менеджер свяжется с вами, чтобы оценить предварительную стоимость, сроки и нюансы
+                        заказа.
 
-                    <p> Делали как сайты «с нуля», так и доделывали чужие «кривые коды». Один из интереснейших проектов
-                        — TDM-electric. Устаревший каталог с «бесконечным полотнищем товаров» переделали в полноценный
-                        интернет-магазин с корзиной, личным кабинетом и автоматической выпиской счетов. На эти
-                        масштабные работы ушло всего 1,5 месяца.</p>
-                    <p>
-                        Если говорить о стандартных сроках, то они, в зависимости от сложности, варьируются от
-                        нескольких дней до нескольких месяцев. Одно дело сделать шаблонный сайт с простым дизайном, и
-                        совсем другое проработать детальный рисунок звездного неба, где каждой звездочке соответствует
-                        своя анимация или переход на отдельную страницу.
                     </p>
-                    <p>
-                        Если готовы начать сотрудничество, то заполните форму и в ближайшее время мы свяжемся с вами!
-                        После телефонного разговора предварительно оценим срок исполнения и стоимость заказа. Если
-                        стоимость вас устроит (у нас она находится в пределах средней по рынку), то проведем серию
-                        личных встреч.
-                    </p>
-                    <p>
-                        На одной из них будет присутствовать разработчик, который на экране компьютера продемонстрирует
-                        вам разницу того или иного варианта верстки. Такая долгая подготовительная работа — это гарантия
-                        защиты от ошибок, исправление которых уже на стадии разработки может дорого обойтись.
-                    </p>
-                    <p>
-                        <strong>
-                            Даже, если не знаете с чего начать — все равно оставляйте заявку. Не раз создавали отличные
-                            сайты, хотя в начале сотрудничества у клиента был только листик А4 с не до конца и от руки
-                            нарисованной структурой сайта.
-                        </strong>
 
+
+                    <p><strong> Не знаете какой именно модуль вам нужен — все равно пишите. У нас большой опыт в
+                            различных
+                            нишах, поэтому поможем сориентироваться и выбрать «идеальный» для вашего бизнеса.</strong>
                     </p>
 
 
                 </div>
-                <div>
+                <div class="mob-hide">
 
                     @php
                         $technologies=['Amazon','android','Angular','Bootstrap','CDN','CSS','firebase','googlemaps','HTML','JavaScript','jQuery','kotlin','laravel',
@@ -131,14 +157,15 @@ Modx, Bitrix, Wordpress и т.д. Разработка различных тип
                     <div class="technology">
                         @foreach($technologies as $item)
                             <p>
-                        <img src="{{asset ("/images/technologies/$item.svg")}}" alt="{{$item}}" title="{{$item}}">
+                                <img src="{{asset ("/images/technologies/$item.svg")}}" alt="{{$item}}"
+                                     title="{{$item}}">
                                 <span> {{$item}} </span>
                             </p>
                         @endforeach
 
                     </div>
-                </span>
-            </div>
+
+                </div>
 
 
         </section>
