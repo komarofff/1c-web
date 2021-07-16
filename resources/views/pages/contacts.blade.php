@@ -17,12 +17,14 @@
 
 @endsection
 @section('scripts')
-<script src="{{asset('/scripts/script.js')}}"></script>
-<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-<script src="{{asset ('/scripts/slick/slick.js')}}" type="text/javascript" charset="utf-8"></script>
-<script src="{{asset ('/scripts/slider.js')}}"></script>
-<script src="{{asset ('/scripts/tabs.js')}}"></script>
-<script src="{{asset ('/scripts/buttons.js')}}"></script>
+    <script src="{{asset('/js/script.js')}}"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="{{asset ('/js/slick/slick.js')}}" type="text/javascript" charset="utf-8"></script>
+    <script src="{{asset ('/js/slider.js')}}"></script>
+    <script src="{{asset ('/js/tabs.js')}}"></script>
+    <!--<script src="{{asset ('/js/buttons.js')}}"></script>-->
+    <!--<script src="{{asset ('/js/topslider.js')}}"></script>-->
+    <!--<script src="{{asset ('/js/technology-slider.js')}}"></script>-->
 @endsection
 @section('header_banner')
 

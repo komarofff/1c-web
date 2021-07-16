@@ -17,19 +17,21 @@
 
 @endsection
 @section('scripts')
-<script src="{{asset('/scripts/script.js')}}"></script>
-<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-<script src="{{asset ('/scripts/slick/slick.js')}}" type="text/javascript" charset="utf-8"></script>
-<script src="{{asset ('/scripts/slider.js')}}"></script>
-<script src="{{asset ('/scripts/tabs.js')}}"></script>
-<script src="{{asset ('/scripts/buttons.js')}}"></script>
+    <script src="{{asset('/js/script.js')}}"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="{{asset ('/js/slick/slick.js')}}" type="text/javascript" charset="utf-8"></script>
+    <script src="{{asset ('/js/slider.js')}}"></script>
+    <script src="{{asset ('/js/tabs.js')}}"></script>
+    <!--<script src="{{asset ('/js/buttons.js')}}"></script>-->
+    <!--<script src="{{asset ('/js/topslider.js')}}"></script>-->
+    <!--<script src="{{asset ('/js/technology-slider.js')}}"></script>-->
 @endsection
 @section('header_banner')
 
 @section('content')
 <main class="main">
 <section class="sertificate" id="sertificate">
-                <h2 class="article-title">Наши сертификаты</h2>               
+                <h2 class="article-title">Наши сертификаты</h2>
 
                 <h2 class="article-title2 above margin-top-big"></h2>
                 <div class="sertificate-slider">
@@ -37,7 +39,7 @@
                     <div class="sertificate-slider-block">
                         <p class="sertificate-slider-title">Anatoliy Komarov</p>
                         <p class="sertificate-slider-description">
-                            PHP Developer Advanced Level . OOP, MYSQL, Zend, Laravel, Symfony, Yii 2. 
+                            PHP Developer Advanced Level . OOP, MYSQL, Zend, Laravel, Symfony, Yii 2.
                         </p>
                     </div>
                 </div>
@@ -64,7 +66,7 @@
                     <div class="sertificate-slider-block">
                         <p class="sertificate-slider-title">Dzmitry Faliuk</p>
                         <p class="sertificate-slider-description">
-                            PHP Developer Advanced Level . OOP, MYSQL, Zend, Laravel, Symfony, Yii 2. 
+                            PHP Developer Advanced Level . OOP, MYSQL, Zend, Laravel, Symfony, Yii 2.
                         </p>
                     </div>
                 </div>
