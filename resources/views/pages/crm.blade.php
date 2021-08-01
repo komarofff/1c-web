@@ -142,9 +142,9 @@
                         @endforeach
 
                     </div>
-                    </span>
-                </div>
 
+                </div>
+            </div>
 
         </section>
 

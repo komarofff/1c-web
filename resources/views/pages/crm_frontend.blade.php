@@ -94,10 +94,9 @@
                         @endforeach
 
                     </div>
-                    </span>
                 </div>
 
-
+            </div>
         </section>
 
 

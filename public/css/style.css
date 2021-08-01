@@ -879,8 +879,8 @@ a {
 }
 
 .projects-page .article-title {
-    grid-column: 3/12;
-    left: 0;
+    grid-column: 1/12;
+    /*left: 0;*/
     padding: 10px;
 }
 
@@ -1128,6 +1128,9 @@ a {
 }
 .technology-images-xxl{
     margin-right: 30px;
+}
+.regular.slider.margin-top.above.margin-top-big.slick-initialized.slick-slider {
+    margin-top: -20px;
 }
 
 .header{
@@ -2353,6 +2356,9 @@ padding: 10px ;
   }
 }
 @media (max-width: 768px) {
+    .regular.slider.margin-top.above.margin-top-big.slick-initialized.slick-slider {
+        margin-top: -70px;
+    }
     .mob-hide{
         display: none;
     }
@@ -2475,10 +2481,11 @@ padding: 10px ;
     padding: 10px;
   }
   .grid_2_column{
+      grid-column: 1/13;
     grid-template-columns: 1fr;
   }
   .projects-page .article-title{
-    left:5%;
+    /*left:5%;*/
   }
     .margin-top-big{
         margin-top: 75px;

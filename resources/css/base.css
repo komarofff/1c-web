@@ -271,8 +271,8 @@ a {
 }
 
 .projects-page .article-title {
-    grid-column: 3/12;
-    left: 0;
+    grid-column: 1/12;
+    /*left: 0;*/
     padding: 10px;
 }
 
@@ -500,4 +500,7 @@ a {
 }
 .technology-images-xxl{
     margin-right: 30px;
+}
+.regular.slider.margin-top.above.margin-top-big.slick-initialized.slick-slider {
+    margin-top: -20px;
 }

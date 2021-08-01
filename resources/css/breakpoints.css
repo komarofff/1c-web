@@ -138,6 +138,9 @@
   }
 }
 @media (max-width: 768px) {
+    .regular.slider.margin-top.above.margin-top-big.slick-initialized.slick-slider {
+        margin-top: -70px;
+    }
     .mob-hide{
         display: none;
     }
@@ -260,10 +263,11 @@
     padding: 10px;
   }
   .grid_2_column{
+      grid-column: 1/13;
     grid-template-columns: 1fr;
   }
   .projects-page .article-title{
-    left:5%;
+    /*left:5%;*/
   }
     .margin-top-big{
         margin-top: 75px;
