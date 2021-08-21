@@ -1,0 +1,299 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v93/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+.email_underline {
+    display: inline-block !important;
+    border-bottom: 1px solid #D8D8D8;
+    font-weight: 400;
+    color: #292a2b;
+}
+
+.modal-content {
+    position: relative;
+    padding: 30px;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    outline: 0;
+    overflow-y: auto;
+    height: 100%;
+    max-height: 90%;
+    font-family: 'Inter', sans-serif;
+}
+
+.modal .closeModal {
+    position: absolute;
+    right: 8px;
+    top: 0px;
+    color: #020202;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.grid_cont {
+    max-width: 1520px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 1.5rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.grid_3_8 {
+    grid-column: 2/8;
+}
+
+.grid_9_11 {
+    grid-column: 9/12;
+}
+
+.modal-dialog {
+    position: relative;
+    pointer-events: none;
+    max-width: 1280px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+    padding: 15px;
+}
+
+.relative {
+    position: relative;
+}
+
+.input_group {
+    position: relative;
+}
+
+.mb-25 {
+    margin-bottom: 25px;
+}
+
+.textarea_group {
+    position: relative;
+}
+
+.form-control {
+    color: #292A2B;
+    border-radius: 9px;
+    /*height: 65px;*/
+    width: 100%;
+    border: 1.3px solid #C3DCFF;
+    padding: 10px;
+    font-size: 26px;
+}
+
+.form-control__helper {
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    color: #292A2B;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+.textarea {
+    height: 260px;
+}
+
+.dragging__file {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 55px;
+    text-align: center;
+    padding-top: 14px;
+    background-color: #fce77c;
+    z-index: 1;
+    font-size: 22px;
+    visibility: hidden;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.custom-file .label {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px dashed #C3DCFF;
+    display: block;
+    padding: 10px;
+    transition: border 300ms ease;
+    cursor: pointer;
+    font-weight: 300;
+    background-color: white;
+    border-left: 1.3px solid #C3DCFF;
+    border-bottom: 1.3px solid #C3DCFF;
+    border-right: 1.3px solid #C3DCFF;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+.custom-file .label i, .custom-file .label .title {
+    color: black;
+    transition: 200ms color;
+}
+
+.custom-file .label i {
+    display: inline-block;
+    font-size: 29px;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+.custom-file .label .title {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.1px;
+    vertical-align: top;
+    color: #292A2B !important;
+}
+
+.custom-file input[type=file] {
+    outline: 0;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: none;
+}
+
+.btn-large {
+    min-width: 140px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 23px;
+    padding-right: 23px;
+    border-radius: 40px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: white;
+    background: #0f2348;
+    transition: all 0.3s;
+}
+
+.btn {
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 23px;
+    padding-right: 23px;
+    border-radius: 40px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.contact-us_right {
+    line-height: 1.5;
+}
+
+.contact-us_right p {
+    padding-bottom: 24px;
+}
+
+.contact-us_right small {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    padding-bottom: 5px;
+}
+
+.contact-us_right span {
+    font-size: 16px;
+    display: block;
+}
+
+.contact-us_right b {
+    font-size: 20px;
+    padding-bottom: 5px;
+    display: block;
+}
+
+.modal {
+    /*display: none;*/
+    position: fixed;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: 999999;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.modal-dialog {
+    position: relative;
+    pointer-events: none;
+    max-width: 1280px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+    padding: 15px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+input:-internal-autofill-selected {
+    -webkit-appearance: menulist-button;
+       -moz-appearance: menulist-button;
+            appearance: menulist-button;
+    background-color: rgb(232, 240, 254) !important;
+    background-image: none !important;
+    color: -internal-light-dark(black, white) !important;
+}
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: auto;
+       -moz-appearance: auto;
+            appearance: auto;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    -o-border-image: initial;
+       border-image: initial;
+}
+

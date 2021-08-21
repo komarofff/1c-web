@@ -8,7 +8,9 @@
     <link href="{{asset('/favicon.ico')}}" rel="shortcut icon" />
     <title>@yield ('title','some tittle if none'). ООО ПО Системс групп</title>
     <meta name="description" content="@yield('description','some descriptions if none')" />
+    <meta name="_token" content="{{csrf_token()}}"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="{{asset('/css/modalForm.css')}}">
     <link rel="stylesheet" href="{{asset('/css/style.css')}}">
 
     @yield('og')
@@ -21,9 +23,8 @@
             @include('layouts.topmenu',['menu'=> [
             ['link' => '/#services', 'title' => 'Услуги'],
             ['link' => '/projects', 'title' => 'Наши проекты'],
-            ['link' => '#', 'title' => 'Цены'],
             ['link' => '/about_us', 'title' => 'О нас'],
-            ['link' => '/contacts', 'title' => 'Контакты']
+            ['link' => '#', 'title' => 'Контакты']
             ]]
             )
 
@@ -35,6 +36,7 @@
         @yield ('content')
         @include('layouts.footer')
         <script src="{{mix ('/js/app.js')}}"></script>
+		<script src="{{asset('/js/modalForm.js')}}"></script>
         @yield ('scripts')
     <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-200028103-1">

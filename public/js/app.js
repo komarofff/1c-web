@@ -34563,6 +34563,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/css/modalForm.css":
+/*!*************************************!*\
+  !*** ./resources/css/modalForm.css ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./node_modules/popper.js/dist/esm/popper.js":
 /*!***************************************************!*\
   !*** ./node_modules/popper.js/dist/esm/popper.js ***!
@@ -37600,7 +37613,7 @@ var render = function() {
     "section",
     { staticClass: "sertificate", attrs: { id: "projects" } },
     [
-      _c("h2", { staticClass: "article-title" }, [_vm._v("Наши проекты")]),
+      _c("h2", { staticClass: "article-title" }, [_vm._v("Our projects")]),
       _vm._v(" "),
       _c("h2", { staticClass: "article-title2 above " }),
       _vm._v(" "),
@@ -37612,12 +37625,12 @@ var render = function() {
             "div",
             { staticClass: "project-description", class: item.type },
             [
-              _c("a", { attrs: { href: "/projects/" + item["alias"] } }, [
+              _c("a", { attrs: { href: "/projects/" + item.alias } }, [
                 _c("div", { staticClass: "cut-image" }, [
                   _c("img", {
                     staticClass: "project-images",
                     attrs: {
-                      src: "https://1c-group.by" + item.image,
+                      src: "https://1c-group.by" + item.image_big,
                       alt: "project1"
                     }
                   })
@@ -37625,7 +37638,9 @@ var render = function() {
                 _vm._v(" "),
                 _c("p", { staticClass: "project-image-descriptions" }, [
                   _vm._v(
-                    "\n                " + _vm._s(item.name) + "\n            "
+                    "\n                " +
+                      _vm._s(item.title_rus) +
+                      "\n            "
                   )
                 ])
               ])
@@ -49924,7 +49939,8 @@ Vue.compile = compileToFunctions;
 /******/ 		var installedChunks = {
 /******/ 			"/js/app": 0,
 /******/ 			"css/style": 0,
-/******/ 			"css/app": 0
+/******/ 			"css/app": 0,
+/******/ 			"css/modalForm": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -49972,9 +49988,10 @@ Vue.compile = compileToFunctions;
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/style","css/app"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/style","css/app"], () => (__webpack_require__("./resources/sass/app.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/style","css/app"], () => (__webpack_require__("./resources/css/style.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/style","css/app","css/modalForm"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/style","css/app","css/modalForm"], () => (__webpack_require__("./resources/sass/app.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/style","css/app","css/modalForm"], () => (__webpack_require__("./resources/css/style.css")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/style","css/app","css/modalForm"], () => (__webpack_require__("./resources/css/modalForm.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

@@ -81,18 +81,26 @@ class FunctionsController extends Controller
     {
         //
     }
+//SELECT query1.pagetitle,query1.alias,query1.longtitle,query1.content,query2.value as imageBig,query3.value as imageSmall,query4.value as titleLat,query5.value as contentLat
+//from modx_site_content  as query1
+//inner join modx_site_tmplvar_contentvalues as query2  on (query2.contentid=query1.id  and query2.tmplvarid=22)
+//inner join modx_site_tmplvar_contentvalues as query3  on (query3.contentid=query1.id  and query3.tmplvarid=80)
+//inner join modx_site_tmplvar_contentvalues as query4  on (query4.contentid=query1.id  and query4.tmplvarid=81)
+//inner join modx_site_tmplvar_contentvalues as query5  on (query5.contentid=query1.id  and query5.tmplvarid=82)
+//where query1.parent=18347 and query1.published=1 and query1.deleted=0
 
     public static function getFooterData(){
-        $results = DB::select('SELECT pagetitle,longtitle,alias,value from modx_site_content left join modx_site_tmplvar_contentvalues on modx_site_content.id=modx_site_tmplvar_contentvalues.contentid where parent=18347 and published=1 and deleted=0 ');
-        foreach($results as $dat){
-            $all_projects []= [
-                'image' => $dat->value,
-                'name' => $dat->pagetitle,
-                'alias' => $dat->alias,
-                'type' => $dat->longtitle
-    
-            ]; }
-    
+        $sites_list = DB::table('sites_lists')->get();
+//        $results = DB::select('SELECT pagetitle,longtitle,alias,value from modx_site_content left join modx_site_tmplvar_contentvalues on modx_site_content.id=modx_site_tmplvar_contentvalues.contentid where parent=18347 and published=1 and deleted=0 ');
+//        foreach($results as $dat){
+//            $all_projects []= [
+//                'image' => $dat->value,
+//                'name' => $dat->pagetitle,
+//                'alias' => $dat->alias,
+//                'type' => $dat->longtitle
+//
+//            ]; }
+        $all_projects = $sites_list;
             return $all_projects;
-        }  
+        }
 }

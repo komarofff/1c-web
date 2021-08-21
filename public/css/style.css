@@ -2216,6 +2216,9 @@ padding: 10px ;
   align-self: baseline;
 }
 
+.close{
+    display: none;
+}
 @media (max-width: 1280px) {
   .topmenu__logo {
     grid-column: 2/3;
@@ -2356,6 +2359,23 @@ padding: 10px ;
   }
 }
 @media (max-width: 768px) {
+    .close{
+        display: block;
+    }
+        .grid_cont {
+            grid-template-columns: 1fr;
+            grid-column-gap: 0;
+        }
+
+        .grid_3_8 {
+            grid-column: 1/13;
+            grid-row: 2/2;
+        }
+
+        .grid_9_11 {
+            grid-column: 1/13;
+            grid-row: 1/1;
+        }
     .regular.slider.margin-top.above.margin-top-big.slick-initialized.slick-slider {
         margin-top: -70px;
     }
@@ -2614,4 +2634,12 @@ padding: 10px ;
 }
 
 
+.footer-contact-information > p button#contact_us555 {
+    font-size: 13px;
+    background: inherit;
+    padding: 5px;
+    border-radius: 0;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 10px;
+}
 

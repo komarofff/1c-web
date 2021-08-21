@@ -16,8 +16,8 @@ mix.js('resources/js/app.js', 'public/js')
     .js('resources/scripts/script.js', 'public/js')
     .js('resources/scripts/slider.js', 'public/js')
     .js('resources/scripts/tabs.js', 'public/js')
-    .js('resources/scripts/topslider.js', 'public/js')
-    .js('resources/scripts/technology-slider.js', 'public/js')
+    .js('resources/js/modalForm.js', 'public/js/modalForm.js')
     .vue()
     .sass('resources/sass/app.scss', 'public/css').version()
-    .css ('resources/css/style.css','public/css').version();
+    .css ('resources/css/style.css','public/css').version()
+    .css ('resources/css/modalForm.css','public/css/modalForm.css').version();

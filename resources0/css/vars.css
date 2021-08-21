@@ -1,0 +1,73 @@
+:root {
+  --container-width: 100%;
+  --color-white: #fff; 
+  --color-red: #ff7439;
+  --color-green: #28B292;
+  --color-light-blue: #F1F7FF;
+  --body-font-size: 22px;
+  --body-background-color: #fff;
+  --shadow-color: #ccc;
+  --top-menu-background-color: linear-gradient(
+    89.96deg,
+    #172b50 4.61%,
+    #19366b 33.43%,
+    #3e5a8d 96.02%
+  );
+  --header-background-color: linear-gradient(
+    55.22deg,
+    #1e2844 1.44%,
+    #303c72 46.79%,
+    #3e5a8d 100%
+  );
+  --header-banner-background-color: radial-gradient(
+    42.06% 55.05% at 82.29% 23.54%,
+    #2d455b 0%,
+    rgba(46, 71, 95, 0.71739) 28.26%,
+    rgba(50, 76, 107, 0.43393) 56.61%,
+    rgba(57, 84, 127, 0.15084) 84.92%,
+    rgba(62, 90, 141, 0) 100%
+  );
+  --footer-banner-title-border: linear-gradient(180deg, #3C678E 0%, #2E988F 100%);
+  --footer-banner-background-color: linear-gradient(
+    267.68deg,
+    #3a5381 7.8%,
+    #263357 44.65%
+  );
+  --services-background-color: linear-gradient(
+    0deg,
+    #ffffff 0%,
+    #eff5fd 54.39%,
+    #e8f0fc 100%
+  );
+  --services-tabs-links-color: #9599ab;
+  --services-tabs-active-links: #334277;
+  --services-tabs-background-color: linear-gradient(
+    90deg,
+    #e8f0fc 0%,
+    #eaf1fc 58.42%,
+    #f1f6fd 81.36%,
+    #fdfeff 98.03%,
+    #ffffff 100%
+  );
+  --services-button-color: linear-gradient(
+    75.38deg,
+    #ff7439 2.42%,
+    #fd793a 26.95%,
+    #f9873b 55.11%,
+    #f19e3e 84.94%,
+    #edab3f 98.99%
+  );
+  --project-tabs-link-color: #71788f;
+  --footer-background-color: #263357;
+  --project-img-description-background: linear-gradient(267.68deg, #3A5381 7.8%, #263357 44.65%);
+  --font-formular: Formular, Arial, Helvetica, sans-serif;
+  --font-roboto: Roboto, Arial, Helvetica, sans-serif;
+  --color-stripe-green: linear-gradient(
+    89.98deg,
+    #2e988f 0.18%,
+    #3f608d 83.26%
+  );
+  --color-stripe-gray: linear-gradient(89.98deg, #324175 0.18%, #3f608d 83.26%);
+  --color-stripe-blue: #121e44;
+  --article-title-color: #28b292;
+}

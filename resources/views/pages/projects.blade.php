@@ -62,16 +62,17 @@ $all_projects=FunctionsController::getFooterData()
 
         <div class="all-projects box ">
             @foreach ($all_projects as $item)
-            <a href="/projects/{{$item['alias']}}">
-                <div class="project-description {{$item['type']}}">
+            <a href="/projects/{{$item->alias}}">
+                <div class="project-description {{$item->type}}">
                     <div class="cut-image">
-                    <img class="project-images" src="https://1c-group.by{{$item['image']}}" alt="{{$item['name']}}">
+                    <img class="project-images" src="https://1c-group.by{{$item->image_big}}" alt="{{$item->title_rus}}">
                     </div>
                     <p class="project-image-descriptions">
-                        {{$item['name']}}
+                        {{$item->title_rus}}
                     </p>
                 </div>
             </a>
+
             @endforeach
 
         </div>

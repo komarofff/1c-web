@@ -1,0 +1,41 @@
+@import url("../fonts/formular/stylesheet.css");
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat/Montserrat-Bold.ttf");
+}
+@import "./vars.css";
+@import "../scripts/slick/slider.css";
+@import "./base.css";
+@import "./header/header.css";
+@import "./topmenu/topmenu.css";
+@import "./header/header-banner.css";
+@import "./header/banner-buttons.css";
+@import "./block-services/services.css";
+@import "./block-advantages/advantages.css";
+@import "./block-how-we-work/how-we-work.css";
+@import "./block-projects/projects.css";
+@import "./block-projects/project-tabs.css";
+@import "./sertificate/sertificate.css";
+@import "./footer/footer-banner.css";
+@import "./footer/footer.css";
+@import "./mobile-menu.css";
+@import "./breakpoints.css";
+/* import fonts */
+
+.none {
+  display: none ;
+}
+.block,.visible {
+  transition: .5s linear;
+  display: block;
+  -webkit-transition: .5s linear;
+  -moz-transition: .5s linear;
+  -ms-transition: .5s linear;
+  -o-transition: .5s linear;
+}
+
+

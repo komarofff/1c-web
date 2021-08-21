@@ -1,0 +1,93 @@
+.topmenu {  
+  z-index: 5;
+   width: 100%; 
+    background: var(--top-menu-background-color);
+    color: var(--color-white);    
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+.topmenu__logo {
+  grid-column: 2/ 3;
+  position: relative;  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  padding: 10px 0 40px 10px;  
+}
+.topmenu__logo img{
+max-height: 130px;
+padding: 10px ;
+}
+.logo {
+  margin: 0;
+  padding: 63px 0;
+  width: 150px;
+  max-width: 100%;
+}
+.topmenu__menu {
+  grid-column: 3/ span 10;
+  align-self: center;
+  max-height: 80vh;
+  /* padding: 50px 0; */
+}
+.topmenu__menu-list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  opacity: 1;
+}
+.topmenu__menu-list-link {
+  text-decoration: none;
+  font-family: Formular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 27px;
+  color: var(--color-white);
+  opacity: 1;
+  padding-bottom: 15px;
+  transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+}
+
+.topmenu__menu-list-link:hover {
+  border-bottom: 4px solid var(--color-green);
+}
+.topmenu__link-active {
+   padding: 20px;
+   border: 3px solid var(--color-red);
+   border-radius: 40px;
+   -webkit-border-radius: 40px;
+   -moz-border-radius: 40px;
+   -ms-border-radius: 40px;
+   -o-border-radius: 40px;
+}
+
+.logo-w{
+  cursor: pointer;
+  background: linear-gradient(    45deg,    #ff7439 15.66%,    #fd793a 33.37%,    #f9873b 53.69%,    #f19e3e 75.21%,    #edab3f 85.36%  );
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: .5s ease-out;
+  -webkit-transition: .5s ease-out;
+  -moz-transition: .5s ease-out;
+  -ms-transition: .5s ease-out;
+  -o-transition: .5s ease-out;
+  margin-right: 10px;
+}
+.logo-w:hover{
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}

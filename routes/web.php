@@ -43,3 +43,8 @@ Route::get('/clear', function() {
 	Artisan::call('route:clear');
     return "Кэш очищен.";
 });
+
+
+Route::post('send-mail', [App\Http\Controllers\PageController::class , 'sendMail']);
+
+Route::post('upload-file', [App\Http\Controllers\PageController::class , 'fileUpload']);

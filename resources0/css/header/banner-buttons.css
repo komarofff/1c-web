@@ -1,0 +1,86 @@
+.banner-buttons {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  max-height: 265px;
+  overflow: hidden;
+}
+
+.banner-buttons-block {
+  position: relative;
+  cursor: pointer;
+  height: 170px;  
+  width: 190px;
+  max-width: 100%;
+  margin: 100px 42px 0 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  border: 4px solid rgba(255, 255, 255, 0.329);
+  border-top: 4px solid rgba(255, 255, 255, 0.329);
+  border-right: 4px solid rgba(255, 255, 255, 0.329);
+  border-bottom: 1px solid var(--color-stripe-blue);
+  border-radius: 10px 10px 2px 2px;
+  -webkit-border-radius: 10px 10px 2px 2px;
+  -moz-border-radius: 10px 10px 2px 2px;
+  -ms-border-radius: 10px 10px 2px 2px;
+  -o-border-radius: 10px 10px 2px 2px;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+
+.banner-buttons-title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  color: var(--color-red);
+  margin: 0;
+  padding: 30px 0 0 0;
+}
+.banner-button-text {
+  font-family: Formular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--color-white);
+  padding: 0 10px;
+}
+.banner-buttons-block:hover {
+  background: rgba(255, 255, 255, 0.2);
+  height: 265px;
+}
+
+.green-star {
+  display: none;
+  padding: 10px 0 15px 0;
+  transition: .5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -ms-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+}
+.banner-buttons-block:hover > .green-star {
+  display: block;
+  animation:  fade-in .5s ease-in-out ;
+  -webkit-animation:  fade-in .5s ease-in-out ;
+}
+
+.banner-buttons-block:hover > .banner-button-text {
+    padding-bottom: 35px;
+}
+.banner-buttons-block:hover > .banner-buttons-title{
+  padding: 0;
+}

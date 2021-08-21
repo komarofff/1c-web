@@ -1,9 +1,15 @@
 <?php
 
+
+
+
+
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
+
 class PageController extends Controller
 {
 
@@ -127,37 +133,44 @@ class PageController extends Controller
     }
 
     public function showOneProject($x) {
-        $results = DB::select("SELECT pagetitle,longtitle,alias,content,introtext,value from modx_site_content left join modx_site_tmplvar_contentvalues on modx_site_content.id=modx_site_tmplvar_contentvalues.contentid where alias='$x' and published=1 and deleted=0 ");
-         if($results){
-         foreach($results as $dat){
-         $dannie []= [
-            'image' => $dat->value,
-            'name' => $dat->pagetitle,
-            'alias' => $dat->alias,
-            'type' => $dat->longtitle,
-            'content' => $dat->content ,
-			'siteUrl' => $dat->introtext
-        ];
-        }
-        return view("pages.one_project",['data'=>$dannie,'title'=>$dannie [0]['name'],'description'=>'']);
+        $sites_list = DB::table('sites_lists')->where('alias', $x)->first();
+        if($sites_list){
+            $dannie = $sites_list;
+        return view("pages.one_project",['data'=>$dannie,'title'=>$dannie->title_rus,'description'=>'']);
         }else{ return view("pages.projects");
         }
    }
+    public function sendMail(Request $request){
 
-//    public static function getFooterData(){
-//     $results = DB::select('SELECT pagetitle,longtitle,alias,value from modx_site_content left join modx_site_tmplvar_contentvalues on modx_site_content.id=modx_site_tmplvar_contentvalues.contentid where parent=18347 and published=1 and deleted=0 ');
-//     foreach($results as $dat){
-//         $all_projects []= [
-//             'image' => $dat->value,
-//             'name' => $dat->pagetitle,
-//             'alias' => $dat->alias,
-//             'type' => $dat->longtitle
+        $details = [
+            'title' => 'Mail from 1c-web.by',
+            'body' => $request->get('message'),
+            'from' => $request->get('email'),
+            'person' => $request->get('name'),
+            'file'=> $request->get('fileName')
+        ];
+        $file = $request->get('fileName');
+        \Mail::to('info@1c-group.by')->send(new \App\Mail\SendMail($details));
+        return 'success';
 
-//         ]; }
+//           dd("Email is Sent.");
 
-//         return $all_projects;
-//     }
+    }
 
+    public function fileUpload(Request $request){
+
+        if ($request->isMethod('post') && $request->file('file')) {
+
+            $file = $request->file('file');
+            $upload_folder = '/public/mail-attachments/';
+            $filename = $file->getClientOriginalName(); // image.jpg
+
+            Storage::putFileAs($upload_folder, $file, $filename);
+            return $filename;
+        }
+
+
+    }
 
 
 

@@ -39,3 +39,11 @@
 }
 
 
+.footer-contact-information > p button#contact_us555 {
+    font-size: 13px;
+    background: inherit;
+    padding: 5px;
+    border-radius: 0;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 10px;
+}

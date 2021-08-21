@@ -4,6 +4,7 @@ $all_projects=\App\Http\Controllers\FunctionsController::getFooterData()
 @endphp
 <div class="stripe-green2"></div>
 <projects-slider :all_projects='@json($all_projects)' /></projects-slider>
+
 <div class="stripe-green2"></div>
 <section class="footer-banner">
                 <img class="footer-banner__image" src="{{asset('/images/banners/footer-banner.png')}}" alt="footer-banner">
@@ -34,6 +35,12 @@ $all_projects=\App\Http\Controllers\FunctionsController::getFooterData()
                 <p>Viber,Telegramm,WhatsApp <a href="tel:+375 29 709-60-78">+375 29 700-50-23</a></p>
                 <p>г.Минск, ул.Некрасова 39-1 каб.327</p>
                 <p>Свидетельство о государственной регистрации № 193451364</p>
+{{--				@if (Route::current()->getName()!='')--}}
+                    <p><button class="services__description-button contact_us555" id="contact_us555">
+                            Заказать сайт
+                        </button></p>
+{{--                @endif--}}
             </div>
         </footer>
     </div>
+@include ('layouts.modalForm')

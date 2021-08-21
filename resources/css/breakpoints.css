@@ -1,3 +1,6 @@
+.close{
+    display: none;
+}
 @media (max-width: 1280px) {
   .topmenu__logo {
     grid-column: 2/3;
@@ -138,6 +141,23 @@
   }
 }
 @media (max-width: 768px) {
+    .close{
+        display: block;
+    }
+        .grid_cont {
+            grid-template-columns: 1fr;
+            grid-column-gap: 0;
+        }
+
+        .grid_3_8 {
+            grid-column: 1/13;
+            grid-row: 2/2;
+        }
+
+        .grid_9_11 {
+            grid-column: 1/13;
+            grid-row: 1/1;
+        }
     .regular.slider.margin-top.above.margin-top-big.slick-initialized.slick-slider {
         margin-top: -70px;
     }
